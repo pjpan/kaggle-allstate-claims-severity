@@ -3,9 +3,9 @@ import numpy as np
 
 from util import Dataset
 
-for name in ['train', 'test']:
+for name in ['train','test']:
     print "Processing %s..." % name
-    data = pd.read_csv('../input/%s.csv.zip' % name)
+    data = pd.read_csv('./input/%s.csv.zip' % name)
 
     # Save column names
     if name == 'train':
@@ -24,3 +24,4 @@ for name in ['train', 'test']:
 
 
 print "Done."
+

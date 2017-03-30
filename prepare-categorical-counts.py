@@ -12,6 +12,7 @@ test_cat = Dataset.load_part('test', 'categorical')
 train_cat_counts = np.zeros(train_cat.shape, dtype=np.float32)
 test_cat_counts = np.zeros(test_cat.shape, dtype=np.float32)
 
+# tqdm 只是为了实现一个进度的功能呢吧；
 with tqdm(total=train_cat.shape[1], desc='  Counting', unit='cols') as pbar:
     for col in xrange(train_cat.shape[1]):
         train_series = pd.Series(train_cat[:, col])

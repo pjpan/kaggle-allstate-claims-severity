@@ -14,7 +14,6 @@ from keras.callbacks import Callback
 from keras.models import load_model
 from keras.engine.training import collect_trainable_weights
 
-import sys
 import warnings
 
 

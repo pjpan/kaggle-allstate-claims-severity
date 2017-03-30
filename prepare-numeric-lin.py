@@ -16,3 +16,4 @@ for name in ['train', 'test']:
     Dataset(numeric_lin=data[num_columns].values.astype(np.float32)).save(name)
 
 print "Done."
+
